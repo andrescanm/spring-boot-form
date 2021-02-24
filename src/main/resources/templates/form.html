@@ -2,10 +2,11 @@
 <html xmlns:th="https://www.thymeleaf.org">
 <head>
 <meta charset="UTF-8">
-<title></title>
+<title th:text="${titulo}"></title>
 </head>
 <body>
-	<form th:action="@{/form}" action="POST" >
+	<h3 th:text="${titulo}"></h3>
+	<form th:action="@{/form}" method="post">
 		<div>
 			<label for="username">Username</label>
 		</div>
